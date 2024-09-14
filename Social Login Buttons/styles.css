@@ -1,0 +1,175 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#D6E2F0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    
+}
+.microsoft{
+    background-color:rgba(47,46,46,255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    min-width: 320px; 
+    cursor: pointer;
+   
+}
+img{
+    height: 2rem;
+    width: 2rem;
+}
+.microsoft h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+.amazon{
+    background-image: linear-gradient(181deg, #eed58c,#f1c54b);
+    border-color: #f6cd5d;
+    box-shadow: 0 0 0 2px rgba(100,88,49,0.74);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 2px solid black;
+    min-width: 320px; 
+    cursor: pointer;
+}
+.logo2 img{
+    margin-top: 7px;
+}
+
+.amazon h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    /* color: white; */
+}
+.slack{
+    background-color: #ffffff;
+    border-color: #f6f6d4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    min-width: 320px; 
+    cursor: pointer;
+    
+}
+
+.slack h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+.facebook{
+    background-color: #0865fe;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    min-width: 320px; 
+    cursor: pointer;
+    
+}
+
+.facebook h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+/* .button{
+    border: none;
+    cursor: pointer;
+    padding: 15px 32px;
+    width: 290px;
+    font-family: "Roboto", sans-serif;
+    padding: 1rem ;
+    margin: 1rem;
+   
+   
+
+}
+img{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 30rem;
+   left: 30rem;
+  margin-top: 1.9rem;
+  margin-left: 5rem;
+  padding-bottom: 0.2rem;
+  
+  
+
+    
+    
+  
+}
+.microsoft{
+    background-color:rgba(47,46,46,255);
+    color: white;
+    font-size: 17px;
+    letter-spacing: normal;
+    
+    
+    
+}
+.amazon{
+    background-image: linear-gradient(181deg, #eed58c,#f1c54b);
+    border-color: #f6cd5d;
+    border: 2px solid black;
+    border-radius:0.3rem ;
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+.slack{
+    background-color: white;
+    border-radius:0.3rem ;
+    font-size: 20px;
+    letter-spacing: normal;
+    font-weight: bold;
+}
+.facebook{
+    background-color: #0865fe;
+    color: white;
+    font-size: 18px;
+    letter-spacing: normal;
+    font-weight: bold;
+    border-radius:0.3rem ;
+}
+.div{
+    display: flex;
+    flex-direction: row;
+} */
+
+ */
