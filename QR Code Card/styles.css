@@ -78,9 +78,11 @@ img {
     .card-content {
         flex: 1;
         text-align: left;
+        
     }
 
     .qr-code {
         flex: 1;
+        
     }
 }
