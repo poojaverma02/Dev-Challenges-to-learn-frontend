@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D6E2F0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+}
