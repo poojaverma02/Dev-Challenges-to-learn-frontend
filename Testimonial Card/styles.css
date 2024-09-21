@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -19,13 +20,40 @@ body{
     align-items: center;
 }
 .card{
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 60%;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-radius: 2.5rem;
+    border:1px solid purple;
 }
 img{
     height: 5rem;
     width: 5rem;
     border-radius: 50px;
+    align-items: center;
+    margin-left: 10.4rem;
+    
+}
+.test{
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+ 
+}
+h1{
+    color: rgb(71, 21, 71);
+    font-size: 3rem;
+   
+}
+.name{
+    text-align: center;
+}
+.startags{
+    text-align: center;
+}
+.desc{
+    
+    height: 50%;
 }
