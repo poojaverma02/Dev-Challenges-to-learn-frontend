@@ -1,94 +1,94 @@
+d6e2f0
 /* General body style for background matching */
 body {
-    background-color: #E4EBF0; /* Light blue background */
-  }
-  
-  /* Container for the toggle */
-  .toggle-container {
-    display: inline-block;
-    position: relative;
-  }
-  
-  /* Hide the checkbox input */
-  .toggle-input {
-    display: none;
-  }
-  
-  /* The label becomes the clickable toggle */
+  background-color: #d6e2f0; /* Light blue background */
+}
+
+/* Container for the toggle */
+.toggle-container {
+  display: inline-block;
+  position: relative;
+}
+
+/* Hide the checkbox input */
+.toggle-input {
+  display: none;
+}
+
+/* The label becomes the clickable toggle */
+.toggle-label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: #D6D6D6; /* Light gray when off */
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* The switch circle inside the toggle */
+.toggle-switch {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF; /* White circle */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #A9A9A9; /* Light gray icon color when off */
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.icon {
+  position: absolute;
+}
+
+.icon.on {
+  opacity: 0; /* Hidden in default off state */
+}
+
+.icon.off {
+  opacity: 1;
+}
+
+/* When checked, change the background and move the switch */
+.toggle-input:checked + .toggle-label {
+  background-color: #6ABEFF; /* Light blue when on */
+}
+
+.toggle-input:checked + .toggle-label .toggle-switch {
+  transform: translateX(30px); /* Moves the switch to the right */
+  background-color: #6ABEFF; /* Match the background */
+  color: #FFFFFF; /* White checkmark */
+}
+
+.toggle-input:checked + .toggle-label .icon.on {
+  opacity: 1; /* Show checkmark */
+}
+
+.toggle-input:checked + .toggle-label .icon.off {
+  opacity: 0; /* Hide the 'X' */
+}
+
+/* Optional - Add responsiveness */
+@media (max-width: 600px) {
   .toggle-label {
-    display: block;
-    width: 60px;
-    height: 30px;
-    background-color: #D6D6D6; /* Light gray when off */
-    border-radius: 30px;
-    position: relative;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    width: 50px;
+    height: 25px;
   }
   
-  /* The switch circle inside the toggle */
   .toggle-switch {
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    width: 24px;
-    height: 24px;
-    background-color: #FFFFFF; /* White circle */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: #A9A9A9; /* Light gray icon color when off */
-    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    width: 20px;
+    height: 20px;
+    top: 2.5px;
   }
-  
-  .icon {
-    position: absolute;
-  }
-  
-  .icon.on {
-    opacity: 0; /* Hidden in default off state */
-  }
-  
-  .icon.off {
-    opacity: 1;
-  }
-  
-  /* When checked, change the background and move the switch */
-  .toggle-input:checked + .toggle-label {
-    background-color: #6ABEFF; /* Light blue when on */
-  }
-  
+
   .toggle-input:checked + .toggle-label .toggle-switch {
-    transform: translateX(30px); /* Moves the switch to the right */
-    background-color: #6ABEFF; /* Match the background */
-    color: #FFFFFF; /* White checkmark */
+    transform: translateX(25px);
   }
-  
-  .toggle-input:checked + .toggle-label .icon.on {
-    opacity: 1; /* Show checkmark */
-  }
-  
-  .toggle-input:checked + .toggle-label .icon.off {
-    opacity: 0; /* Hide the 'X' */
-  }
-  
-  /* Optional - Add responsiveness */
-  @media (max-width: 600px) {
-    .toggle-label {
-      width: 50px;
-      height: 25px;
-    }
-    
-    .toggle-switch {
-      width: 20px;
-      height: 20px;
-      top: 2.5px;
-    }
-  
-    .toggle-input:checked + .toggle-label .toggle-switch {
-      transform: translateX(25px);
-    }
-  }
-  
+}
