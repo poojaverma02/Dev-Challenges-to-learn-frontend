@@ -1,77 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d6e2f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
 
-/* Container styles */
-.price-slider-container {
-    width: 300px;
-    margin: 50px auto;
-    text-align: center;
-    font-family: Arial, sans-serif;
+.price-slider {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  transition: width 0.3s ease;
+}
+
+.price-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.low-prices {
+  color: #4faffb; /* Default color for Low prices */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #d3d3d3;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.9;
+  margin-right: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-value {
+  font-size: 18px;
+  color: #4caf50;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  padding: 10px 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.currency-icon {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.currency-label {
+  font-size: 16px;
+}
+
+.apply-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+  .price-slider {
+    max-width: 100%;
+    padding: 15px;
   }
-  
-  /* Label and value */
-  #slider-value {
-    display: block;
-    margin: 10px 0;
-    font-size: 18px;
-    color: #4CAF50;
+
+  .price-header {
+    font-size: 14px;
   }
-  
-  /* Range slider styles */
-  input[type="range"] {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 8px;
-    border-radius: 5px;
-    background: #ddd;
-    outline: none;
-    opacity: 0.8;
-    transition: opacity 0.2s ease;
+
+  .slider-container {
+    flex-direction: column;
   }
-  
-  /* Handle (Thumb) */
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  input[type="range"]::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #4CAF50;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  input[type="range"]::-webkit-slider-thumb {
-    transition: background 0.3s ease;
-  }
-  input[type="range"]:active::-webkit-slider-thumb {
-    background-color: #45a049;
-  }
-  
-  
-  /* Apply button */
-  #apply-btn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .slider-value {
     font-size: 16px;
+    padding: 8px 10px;
   }
-  
-  #apply-btn:hover {
-    background-color: #45a049;
+
+  .apply-btn {
+    font-size: 14px;
+    padding: 8px 16px;
   }
-  @media (max-width: 600px) {
-    .price-slider-container {
-      width: 90%;
-    }
+}
+
+@media (max-width: 480px) {
+  .price-slider {
+    padding: 10px;
   }
+
+  .price-header {
+    font-size: 13px;
+  }
+
+  .low-prices {
+    font-size: 12px;
+  }
+
+  .slider-value {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .currency-icon {
+    font-size: 20px;
+  }
+
+  .apply-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
