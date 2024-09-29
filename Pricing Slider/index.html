@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing Slider</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price Slider</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="price-slider-container">
-        <label for="price">Price</label>
-        <input type="range" id="price-slider" min="0" max="100" value="50" step="1">
-        <span id="slider-value">50 USD</span>
-        <button id="apply-btn">Apply</button>
-      </div>
-    <!-- <div class="slider-container">
-        <div class="header">
-            <div class="price">
-                Price
-            </div>
-            <div class="low-price">
-                Low prices
-            </div>
+  <div class="price-slider">
+    <div class="price-header">
+      <span>Price</span>
+      <span class="low-prices">Low prices</span>
+    </div>
 
-        </div>
-         <div>
-            <input type="range">
-         </div>
-         <div class="footer">
-            <div class="dollor">$</div>
-            <div>USD</div>
-            <button>Apply</button>
-         </div>
-    </div> -->
-    <script src="index.js"></script>
+    <div class="slider-container">
+      <input
+        type="range"
+        id="priceRange"
+        min="0"
+        max="100"
+        value="9"
+        class="slider"
+        oninput="updatePrice()"
+      />
+      <span class="slider-value" id="priceValue">9</span>
+    </div>
+
+    <div class="currency">
+      <span class="currency-icon">$</span>
+      <span class="currency-label">USD</span>
+    <button class="apply-btn" onclick="applyPrice()">Apply</button>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
