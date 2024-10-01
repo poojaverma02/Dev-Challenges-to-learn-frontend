@@ -6,10 +6,10 @@ function updatePrice() {
   output.textContent = slider.value;
 
   // Update the label based on the slider value
-  if (slider.value <= 49) {
+  if (slider.value <= 35) {
     priceLabel.textContent = "Low prices";
     priceLabel.style.color = "#4faffb";  // Low price color
-  } else if (slider.value == 50) {
+  } else if (slider.value <=55) {
     priceLabel.textContent = "Medium price";
     priceLabel.style.color = "#ffa500";  // Medium price color (orange)
   } else {
