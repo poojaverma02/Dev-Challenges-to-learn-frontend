@@ -93,6 +93,9 @@ body {
 .currency-icon {
   font-size: 24px;
   margin-right: 5px;
+  border: 2px solid gray  ;
+  border-radius: 9px;
+
 }
 
 .currency-label {
